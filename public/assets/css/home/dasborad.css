@@ -44,9 +44,10 @@
 }
 .slider ul a{
     color: white;
-    text-decoration: none;
+    text-decoration: none; 
+
 }
-.slider ul li {
+.slider ul a li {
     cursor: pointer;
     padding: 10px 20px;
     margin:0px 10px;
@@ -57,12 +58,17 @@
     align-items: center;
     font-size: 18px;
     font-weight: 400;
+    height: 100%;
     color: white;
     transition: 0.4s;
 }
+.slider ul a li p{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
 .slider ul li:hover,.active{
-    /* transform: translateY(-10px); */
-    transform: translateX(-6px);
+    transform: translateX(-10px);
     background-color: rgb(53, 53, 53);
     color: rgb(255, 226, 167);
 }

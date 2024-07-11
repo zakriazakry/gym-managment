@@ -31,6 +31,7 @@
             <div class="mb-3">
                 <label for="trainer" class="form-label">المدرب</label>
                 <select id="trainer" name="trainer" class="form-select">
+                    <option value="action">بدون</option>
                     <option value="action">رجب</option>
                 </select>
             </div>
