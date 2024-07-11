@@ -1,0 +1,81 @@
+.card {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    height: 100px;
+    width: 240px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    transition: 0.4s ease;
+}
+
+.card .title {
+    color: var(--sec-color);
+    transition: 0.4s ease;
+}
+.card:hover {
+    color: white;
+    background-color: #123;
+    /* background-color: var(--main-hover-color); */
+    transform: translateY(-5px);
+}
+.card:hover .title {
+    color: white;
+}
+.card .title {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.charts{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+#myChart {
+    height: 50%;
+    max-width: 65%;
+}
+
+.last-customrs
+{
+height: 56%;
+scroll-behavior: smooth;
+overflow-x: hidden;
+}
+
+.last-customrs p{
+    color: var(--comment-color);
+}
+
+.usercard{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 10px 0;
+}
+.usercard .us{
+    display: flex;
+    align-items: center;  
+    font-size: 14px;
+}
+.usercard .us img{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}

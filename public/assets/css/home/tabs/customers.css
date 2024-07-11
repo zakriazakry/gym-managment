@@ -1,0 +1,85 @@
+.tableSection {
+    /* width: 100vw; */
+    width: 100%;
+    display: flex;
+    flex-shrink: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    overflow-x: auto; /* إضافة خاصية التمرير الأفقي */
+}
+
+table {
+    border-collapse: collapse;
+    text-align: right;
+    width: 100%; 
+}
+
+table th {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding: 0.75rem 2rem;
+    font-weight: 300;
+}
+
+table td {
+    padding: 1rem 2rem;
+}
+
+table td i{
+    margin:0 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+table td i:hover{
+    color: var(--sec-color);
+}
+table tr:nth-child(even){
+    background-color: rgba(28, 28, 28, 0.743);
+    color: white;
+}
+form{
+    height: 65px;
+    gap: 10px;
+    display: flex;
+    padding: 10px 20px;
+}
+form .button{
+    align-self: center;
+    width: 130px;
+}
+
+form #search{
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 17px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(224, 224, 224);
+}
+form #search:focus{
+    outline: 1px solid rgb(224, 224, 224);
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.content{
+    margin: 15px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(113, 113, 234);
+    padding: 7px 20px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.content a:hover{
+    background-color: rgb(83, 83, 164);
+}

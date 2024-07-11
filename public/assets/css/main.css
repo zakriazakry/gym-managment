@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body{
+    direction: rtl;
+    background-color: var(--bg-color);
+}
+
+.button{
+    background: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 6px 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.button:hover{
+    background: var(--main-hover-color);
+
+}
+.error{
+    text-align: center;
+    width: 60%;
+    background-color: rgb(255, 204, 204);
+    border:1px solid rgb(255, 123, 123);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: rgb(250, 0, 0);
+}
+
+.cardShap{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    width: 240px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}

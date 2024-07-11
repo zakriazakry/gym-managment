@@ -1,0 +1,113 @@
+.system {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.slider {
+    margin: 5px 5px;
+    border-radius: 15px;
+    background-color: rgb(15, 15, 15);
+    width: 300px;
+    height: 98%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.slider .headSlider{
+    display: flex;
+    flex-direction: column;
+    
+}
+.slider .headSlider img {
+    margin: 10px 0;
+    filter: brightness(0) invert(1);
+    align-self: center;
+    height: 110px;
+    width: 130px;
+}
+.slider .headSlider h1 {
+    color: rgb(255, 255, 255);
+    font-family: "perfect";
+    font-size: 18px;
+}
+
+.slider ul {
+    margin-top: 40px;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 10px; 
+}
+.slider ul a{
+    color: white;
+    text-decoration: none;
+}
+.slider ul li {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin:0px 10px;
+    border-radius: 10px;
+    gap: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    transition: 0.4s;
+}
+.slider ul li:hover,.active{
+    /* transform: translateY(-10px); */
+    transform: translateX(-6px);
+    background-color: rgb(53, 53, 53);
+    color: rgb(255, 226, 167);
+}
+
+
+.slider .logout{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin:0px 10px;
+    border-radius: 10px;
+    gap: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    transition: 0.4s;
+    margin-top: auto;
+    text-decoration: none;
+}
+.slider a.logout{
+    padding: 0;
+
+}
+.slider .profile{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.slider .profile img{
+    border-radius: 100%;
+    width: 35px;
+    height:  35px;
+    object-fit: cover;
+}
+
+.slot{
+    width: 100%;
+    height: 100%;
+    margin-right: 310px;
+    padding: 10px;
+}
