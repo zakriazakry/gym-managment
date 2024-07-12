@@ -44,3 +44,23 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
+
+    .slot::-webkit-scrollbar {
+        width: 12px;
+        padding: 5px;
+    }
+
+    .slot::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+
+    .slot::-webkit-scrollbar-thumb {
+        background: #000; 
+        border-radius: 6px;
+        border: 2px solid #f1f1f1;
+    }
+
+    .slot::-webkit-scrollbar-thumb:hover {
+        margin: 10px;
+        background: #555;
+    }

@@ -1,101 +1,61 @@
 body {
+    margin: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('/assets/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .login {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 450px;
     height: 90%;
     background: var(--white-color);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+    padding: 20px; /* Added padding for better spacing */
 }
-p {
-    color: var(--comment-color);
-}
-
-.login .image {
-    position: relative;
-    width: 75%;
-    height: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    overflow: hidden;
-    align-self: center;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
-
-.login .image .imgcontnet {
-    position: absolute;
-    color: rgb(234, 255, 0);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-    padding: 40px;
-}
-
-.login .image .imgcontnet {
-    text-align: center;
-}
-
-#login {
+.rem{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(30%) contrast(100%);
+    text-align: start;
 }
 .login .content {
-    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    width: 100%;
 }
 
 .login .content form {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-.login .content form .button {
-    width: 40%;
+    width: 100%;
 }
 
 .input {
-    gap: 10px;
+    gap: 4px;
     border: none;
     padding: 5px 10px;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-}
-.input input {
     width: 100%;
-    border-radius: 7px;
-    border: 1px solid var(--comment-color);
-    padding: 10px 10px;
 }
+
 .input input:focus {
     outline: none;
     border: 1px solid var(--comment-color);
 }
+
 .or {
     margin: 10px 0;
     display: flex;
@@ -105,17 +65,19 @@ p {
     gap: 8px;
     padding: 8px;
 }
+
 .or .divider {
     width: 25%;
-    /* flex-grow: 1;  */
     height: 1px;
     background-color: #dfdfdf;
 }
+
 .anthorLogin {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .anthorLogin .LoginItem {
     cursor: pointer;
     display: flex;
@@ -125,10 +87,11 @@ p {
     border: 1px solid #dfdfdf;
     border-radius: 10px;
     padding: 5px;
-    width: 45%;
     transition: 0.4s;
+    width: 70%;
+    height: 45px;
 }
-.anthorLogin .LoginItem:hover{
-    background-color:  #f4f4f4;
 
+.anthorLogin .LoginItem:hover {
+    background-color: #f4f4f4;
 }

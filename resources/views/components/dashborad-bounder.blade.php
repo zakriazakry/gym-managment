@@ -1,5 +1,6 @@
 <x-app :css="'assets/css/home/dasborad.css'">
     {{-- head --}}
+    <title>{{$title}}</title>
     <link rel="stylesheet" href="{{asset($css)}}">
     {{-- Body --}}
     <div class="system">
