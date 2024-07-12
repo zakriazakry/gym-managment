@@ -33,14 +33,7 @@
                     <p>المدفوعات</p>
                 </li>
              </a>
-            <li>
-                <i class="fa-solid fa-sliders"></i>
-                <p>الإعدادات</p>
-            </li>
-            <li>
-                <i class="fa-solid fa-chart-pie"></i>
-                <p>الرئيسي</p>
-            </li>
+    
         </ul>
         <a href="{{route('login')}}" class="logout">
             <div class="logout">

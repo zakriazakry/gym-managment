@@ -28,6 +28,7 @@ table td {
 }
 
 table td img{
+    background-color: rgb(214, 214, 214);
    width: 60px;
    height: 60px;
    object-fit: cover;

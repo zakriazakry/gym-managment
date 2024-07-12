@@ -1,6 +1,6 @@
 <x-dashborad-bounder :title="'المدربين'" :css="'assets/css/home/tabs/coachs.css'" :js="''">
     <div class="content">
-     <a href="/add" >
+     <a href="{{route('dashboradCoachsNew')}}" >
          مدرب جديد <i class="fa-solid fa-plus"></i>  
      </a>
       <form action="#" method="get">
@@ -31,7 +31,7 @@
                   <tr>
                      <td>#{{$i}}</td>
                      <td>
-                        <img width="100px" src="https://www.winwin.com/sites/default/files/styles/medium_640x360/public/2021-08/%D9%86%D8%A7%D8%B5%D8%B1%20%D8%A7%D9%84%D8%AE%D8%B6%D9%8A%D8%B1%D9%8A_0.jpg" alt="">
+                        <img width="100px" src="https://attic.sh/6w3cufd5r762815njt1306orab15" alt="">
                      </td>
                      <td>رجب</td>
                      <td>0944444444</td>
@@ -40,8 +40,11 @@
                      <td>2024 - 2 - 21</td>
                      <td>2024 - 3 - 20</td>
                      <td>
-                         <i class="fa-regular fa-pen-to-square"></i>
-                         <i class="fa-solid fa-user-minus"></i>
+                        <a href="{{route('dashboradCoachsEdit')}}">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                         <i data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                class="fa-solid fa-user-minus"></i>
                      </td>
                  </tr>    
                  @endfor
@@ -51,5 +54,25 @@
          </table>
      </div>
   
+
+      {{-- delete --}}
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">حذف المدرب</h5>
+                {{-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
+            </div>
+            <div class="modal-body">
+                هل انت متأكد من حذف المدرب ,لا يمكنك التراجع عن ذالك بعد الحذف!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">اغلاق</button>
+                <button type="button" class="btn btn-danger">حذف</button>
+            </div>
+        </div>
+    </div>
+</div>
  </x-dashborad-bounder>
  

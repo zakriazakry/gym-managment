@@ -1,6 +1,6 @@
 <x-dashborad-bounder :title="'الرئيسية'" :css="'assets/css/home/tabs/home.css'" :js="'assets/js/home/home.js'">
     <div class="cards">
-        @for ($i = 1; $i <= 6; $i++)
+        @for ($i = 1; $i <= 12; $i++)
             <div class="card">
                 <div class="title">
                     <i class="fa-solid fa-tag"></i>
@@ -13,13 +13,13 @@
     <div class="charts">
         <canvas class="cardShap" id="myChart"></canvas>
         <div class="cardShap last-customrs" style="width: 33%">
-            <h3> اخر الزبائن (6)</h3>
+            <h4> اخر الزبائن (6)</h4>
             <p>اخر الزبائن المشتركين في النادي</p>
             @for ($i = 0; $i <= 5; $i++)
             <div class="usercard">
                 <div class="us">
                     <img src="https://www.pngitem.com/pimgs/m/645-6452863_profile-image-memoji-brown-hair-man-with-glasses.png" alt="">
-                    <p>حمادي الشرقاوي</p>
+                    <p>زكريا ناصر زكري</p>
                 </div>
                 <p>01-27</p>
             </div>

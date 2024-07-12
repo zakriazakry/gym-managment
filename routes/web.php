@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\authController;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -29,6 +30,18 @@ Route::prefix('dashborad')-> group(function () {
     Route::get('/customers/new', function () {
         return view('pages.controller.addNewCustomer');
     })->name('dashboradCustomersNew');
+
+    Route::get('/customers/edit', function () {
+        return view('pages.controller.EditCustomer');
+    })->name('dashboradCustomersEdit');
+// ==========================================
+    Route::get('/coachs/new', function () {
+        return view('pages.controller.addNewCoachs');
+    })->name('dashboradCoachsNew');
+
+    Route::get('/coachs/edit', function () {
+        return view('pages.controller.EditCoachs');
+    })->name('dashboradCoachsEdit');
 
     Route::get('/coachs', function () {
         return view('pages.home.coachs');
