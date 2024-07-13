@@ -11,6 +11,7 @@ body{
 }
 
 .button{
+    height: 50px;
     background: var(--main-color);
     color: white;
     border: none;

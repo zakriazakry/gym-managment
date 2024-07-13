@@ -1,6 +1,8 @@
 const xValues = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
 const yValues = [55, 49, 44, 24, 35,45,35,24,20,35,12,45];
-const barColors = ["black", "grey", "#123", "black", "#332","black", "grey", "#123", "black", "#332","black", "#332",];
+// const barColors = ["black", "grey", "#123", "black", "#332","black", "grey", "#123", "black", "#332","black", "#332",];
+const barColors = ["#3498db", "#2ecc71", "#e74c3c", "#9b59b6", "#f1c40f", "#1abc9c", "#e67e22", "#34495e", "#95a5a6", "#16a085", "#27ae60", "#2980b9"];
+
 
 new Chart("myChart", {
     type: "bar",
@@ -16,21 +18,19 @@ new Chart("myChart", {
 
 const data = {
     labels: [
-      'Red',
-      'Green',
-      'Yellow',
-      'Grey',
-      'Blue'
+      'الأعضاء',
+      'المشتركين',
+      'المدربين',
+     
     ],
     datasets: [{
-      label: 'My First Dataset',
-      data: [11, 16, 7, 3, 14],
+      label: 'Digram GYM',
+      data: [234, 180, 12,],
       backgroundColor: [
-        'rgb(255, 99, 132)',
-        'rgb(75, 192, 192)',
-        'rgb(255, 205, 86)',
-        'rgb(201, 203, 207)',
-        'rgb(54, 162, 235)'
+        '#ffa500',
+        '#252524',
+        '#f4cd7a',
+   
       ]
     }]
   };

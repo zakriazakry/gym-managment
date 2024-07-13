@@ -14,13 +14,55 @@ Route::get('/login', function () {
 
 Route::post('/login', [authController::class, 'login']);
 
-Route::prefix('dashborad')-> group(function () {
+Route::prefix('dashborad')->group(function () {
     Route::get('/', function () {
         return redirect()->route('dasboradHome');
     });
 
     Route::get('/home', function () {
-        return view('pages.home.home');
+        return view('pages.home.home', [
+            'data' => [
+                [
+                    'name' => 'عدد الأعضاء',
+                    'value' => '234'
+                ],
+                [
+                    'name' => 'عدد المشتركين',
+                    'value' => '180'
+                ],
+                [
+                    'name' => 'عدد المدربين',
+                    'value' => '12'
+                ], [
+                    'name' => 'المعاملات اليومية',
+                    'value' => '14 م'
+                ], [
+                    'name' => 'المعاملات الشهرية',
+                    'value' => '234 م'
+                ], [
+                    'name' => 'المعاملات السنوية',
+                    'value' => '459 م'
+                ], [
+                    'name' => 'المدفوعات اليومية',
+                    'value' => '234 د.ل'
+                ], [
+                    'name' => 'المربح اليومي',
+                    'value' => '70 د.ل'
+                ], [
+                    'name' => 'المدفوعات الشهرية',
+                    'value' => '1,450 د.ل'
+                ], [
+                    'name' => 'المربح الشهري',
+                    'value' => '650 د.ل'
+                ], [
+                    'name' => 'المدفوعات السنوية',
+                    'value' => '35,000 د.ل'
+                ], [
+                    'name' => 'المربح السنوي',
+                    'value' => '25,650'
+                ],
+            ]
+        ]);
     })->name('dashboardHome');
 
     Route::get('/customers', function () {
@@ -34,7 +76,7 @@ Route::prefix('dashborad')-> group(function () {
     Route::get('/customers/edit', function () {
         return view('pages.controller.EditCustomer');
     })->name('dashboradCustomersEdit');
-// ==========================================
+    // ==========================================
     Route::get('/coachs/new', function () {
         return view('pages.controller.addNewCoachs');
     })->name('dashboradCoachsNew');
@@ -47,7 +89,7 @@ Route::prefix('dashborad')-> group(function () {
         return view('pages.home.coachs');
     })->name('dashboradCoachs');
 
-    Route::get('/payment',function () {
+    Route::get('/payment', function () {
         return view('pages.home.Payments');
     })->name('dashboradPayment');
 });

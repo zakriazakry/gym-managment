@@ -6,7 +6,12 @@
     <div class="system">
         <div class="slider">
            <div class="headSlider">
-            <img src="{{ url('/assets/images/logo.png') }}"  alt="">
+            <center>
+                <a  href="{{route('dashboardHome')}}">
+                    <img src="{{ url('/assets/images/logo.png') }}"  alt="">
+                </a>
+            </center>
+           
             <h1 >UNO FITNESS CLUB</h1>
            </div>
         <ul>

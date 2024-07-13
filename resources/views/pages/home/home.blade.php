@@ -1,14 +1,16 @@
 <x-dashborad-bounder :title="'الرئيسية'" :css="'assets/css/home/tabs/home.css'" :js="'assets/js/home/home.js'">
     <div class="cards">
-        @for ($i = 1; $i <= 12; $i++)
-            <div class="card">
+
+@foreach ($data as $item)
+        <div class="card">
                 <div class="title">
                     <i class="fa-solid fa-tag"></i>
-                    <p>المبيعات الشهرية</p>
+                    <p>{{$item['name']}}</p>
                 </div>
-                <h2>999 د.ل</h2>
+                <h4>{{$item['value']}}</h4>
             </div>
-        @endfor
+    
+@endforeach
     </div>
     {{-- charts --}}
 
@@ -19,7 +21,7 @@
     {{-- transaction --}}
     <div class="flex">
         <div class="cardShap last-customrs" style="width: 65%">
-            @for ($i = 0; $i <= 6; $i++)
+            @for ($i = 1; $i <= 8; $i++)
             <div class="usercard">
                 <div class="us">
                   <h5 class="mx-3">#{{$i}}</h5>
