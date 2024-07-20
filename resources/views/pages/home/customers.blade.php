@@ -108,7 +108,8 @@
                         <select id="trainer" name="trainer" class="form-select" value="بدون">
                             <option value="action">بدون</option>
                             <option value="action" >رجب عون</option>
-                            <option value="action" selected>انس السويسي</option>
+                            <option value="action" >انس السويسي</option>
+                            <option value="action" selected>محمد الترهوني</option>
                         </select>
                     </div>
                     <div class="mb-3">
