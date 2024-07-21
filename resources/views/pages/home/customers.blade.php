@@ -93,7 +93,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">تجديد العضو</h5>
-                </div>
+                </div> 
                 <div class="p-3">
                     <div class="mb-3">
                         <label for="field" class="form-label">المجال</label>
